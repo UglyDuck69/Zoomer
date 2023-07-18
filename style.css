@@ -1,0 +1,329 @@
+* {
+    box-sizing:border-box
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+@font-face {
+    font-family: 'BOG';
+    src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Regular.eot');
+    src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Regular.eot?#iefix') format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Regular.woff2') format('woff2'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Regular.woff') format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Regular.ttf') format('truetype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Regular.svg#BOG-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BOG Headline';
+    src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.eot');
+    src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.eot?#iefix') format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.woff2') format('woff2'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.woff') format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.ttf') format('truetype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.svg#BOG-Headline-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BOG';
+    src: url('https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.eot');
+    src: url('https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.woff2') format('woff2'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.woff') format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.ttf') format('truetype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.svg#BOG-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+.h1{
+    font-size: 14px;
+    font-family: 'inter';
+    color: #99a8b4;
+}
+.row{
+  margin:0 !important;
+}
+.number{
+    color: #fe5f55;
+}
+.navlist{
+    width: 170px;
+    font-family: 'inter';
+    color: #99a8b4;
+    font-size: 14px;
+    transition: all .2s ease-in-out;
+}
+.navlist1{
+    width: 170px;
+    font-family: 'inter';
+    color: #fe5f55;
+    font-size: 14px;
+    transition: all .2s ease-in-out;
+}
+.lang{
+    height: 40px;
+    margin-left: 20px;
+    border-left: 1px solid lightgray;
+}
+
+
+
+
+/* dropdown */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 13px;
+    font-size: 16px;
+    border: none !important;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    border: none !important;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: none !important;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border: none !important;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: transparent;
+  }
+  .dropdownhover :hover{
+    transform: 180deg;
+  }
+/* dropdown */
+select{
+  
+  border: none !important;
+}
+.geo{
+    font-family: 'inter';
+    font-size: 13px;
+    color: #99a8b4;
+    float: left;
+    transition: all .2s ease-in-out;
+}
+.searchinput{
+  border: none;
+  width: 500px;
+  background-color: transparent;
+}
+.profile{
+  font-family: 'inter';
+    font-size: 17px;
+    color: #0a3251;
+    font-weight: bold;
+}
+.blue{
+  background-color: #0a3251;
+}
+.orange{
+  background-color: #ff5000;
+}
+.whitetxt{
+  font-family: 'inter';
+  font-size: 16px;
+  color: #fff;
+  font-weight: normal;
+  cursor: pointer;
+}
+.yvela{
+  background-color: #082a45;
+  border: none;
+  cursor: pointer;
+}
+.yvela a {
+  display: block;
+  width: 59px;
+  height: 24px;
+  border-radius: 3px;
+  color: #fff;
+  float: right;
+  font-family: 'inter';
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  line-height: 24px;
+  transition: all .2s ease-in-out;
+  text-decoration: none;
+}
+.dasfsdf{
+  position: absolute;
+  margin-top: -25px;
+  height: 80px;
+  padding: 0px 50px;
+}
+.cardi{
+  padding: 25px 30px;
+  position: static;
+  border: 2px solid #093251;
+  border-radius: 10px;
+}
+.sale{
+  color: #6c7d90;
+    text-decoration: line-through;
+    font-size: 18px;
+    font-family: 'inter';
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+.newprice{
+  font-size: 28px;
+    font-family: 'inter';
+    line-height: .8;
+    color: #f43a40;
+    letter-spacing: 1.4px;
+    margin-bottom: 13px;
+}
+.sdasa{
+  font-size: 15px;
+    color: #a8b1bc;
+    font-family: 'inter';
+    display: flex;
+    align-items: center;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 100%;
+    transition: all .2s ease-in-out;
+}
+.cart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border: 2px solid #f2f3f5;
+  border-radius: 8px;
+  background-color: transparent;
+}
+.yidva{
+  height: 53px;
+  background: #ff5400;
+  border-radius: 8px;
+  width: calc(100% - 60px);
+  color: #fff;
+  font-family: 'inter';
+  transition: all .2s ease-in-out;
+  border: none;
+}
+.ganvadebit{
+  height: 53px;
+    background: #093251;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-family: 'inter';
+    font-size: 13px;
+    border: none;
+    margin: 12px 0 20px;
+    transition: all .2s ease-in-out;
+}
+.onepluss{
+  font-size: 13px;
+  color: #17223b;
+  font-family: 'inter';
+  text-decoration: underline;
+}
+.zoomtag{
+  color: #9ca6b1;
+  font-size: 13px;
+}
+.phonename{
+  color: #0a3251;
+    font-size: 24px;
+    font-family: 'inter';
+    font-weight: bold;
+}
+.shedareba{
+    border: none;
+    align-items: center;
+    justify-content: space-around;
+    background-color: transparent;
+    color: #a8b1bc;
+    font-size: 12px;
+    font-family: 'inter';
+    cursor: pointer;
+    
+}
+.feri{
+  font-family: 'inter';
+    padding-bottom: 12px;
+    align-items: center;
+    font-size: 13px;
+}
+.black{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: black;
+}
+.green1{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #6e916e;
+}
+.green{
+  margin-right: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: solid 2px #ff5000;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.specs {
+  list-style:georgian;
+    padding-bottom: 12px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    color: #0a3251;
+    word-wrap: break-word;
+}
